@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Salma - Personal Portfolio </title>
+    <title>Salma - Cloud Computing Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Cloud Computing, AWS, DevOps, Portfolio" name="keywords">
+    <meta content="Portfolio showcasing cloud computing skills, projects, and certifications." name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/cloud-icon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,6 +30,25 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+    /* Keyframes for the fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Apply animation to the header */
+    .animated-header {
+        animation: fadeIn 1s ease-out;
+    }
+</style>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -41,7 +60,6 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
@@ -50,43 +68,34 @@
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
-            </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">Salma</h1>
-            </a>
-            <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
-               
-                
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
+        <!-- Navbar -->
+<div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+        <a href="#skills" class="nav-item nav-link">Skills</a>
+        <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+        <h1 class="text-primary fw-bold m-0"><i class="fas fa-cloud"></i> Salma</h1>
+    </a>
+        <a href="#projects" class="nav-item nav-link">Projects</a>
+        <a href="#education" class="nav-item nav-link">Education</a>
+        <a href="#experience" class="nav-item nav-link">Experience</a>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+    </div>
+    
+</div>
+
     </nav>
     <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-<div class="container-fluid bg-light my-6 mt-0" id="home" style="padding: 50px 0;">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6" style="text-align: center;">
-                <h3 class="text-primary mb-3" style="font-size: 2rem;">I'm</h3>
-                <h1 class="display-3 mb-3" style="font-size: 5rem;">Salma Mohamed</h1>
-                <h2 class="typed-text-output d-inline" style="font-size: 3rem;"></h2>
-                <div class="typed-text d-none">Cloud Engineer & AWS Solutions Architect</div>
-                <div class="d-flex align-items-center pt-5" style="justify-content: center;">
-                    <a href="SalmaMohamed.pdf" class="btn btn-primary py-3 px-4 me-5" style="font-size: 1.25rem;">Download CV</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="img/
-online-cloud-data-storage-concept-cloudscape-digital-online-server-global-network-business-web-database-backup-computer-private-infrastructure-technology.png" alt="">
+<!-- Header Start -->
+<div style="background: linear-gradient(135deg, #1a1a1a, #2c2c2c); color: #fff; padding: 60px 0; text-align: center;" id="home">
+    <div style="max-width: 960px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <h3 style="color: #4a90e2; margin-bottom: 20px;">I'm</h3>
+            <h1 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 15px;color:white">Salma Mohamed</h1>
+            <h2 class="animated-header" style="font-size: 2.5rem; font-weight: lighter; margin-bottom: 25px; color: #ccc;">Cloud Engineer & AWS Solutions Architect</h2>
+            <div style="margin-top: 25px;">
+                <a href="SalmaMohamed.pdf" style="background: #4a90e2; color: #fff; border: none; padding: 10px 20px; font-weight: bold; text-decoration: none; border-radius: 5px;">Download CV</a>
             </div>
         </div>
     </div>
@@ -96,342 +105,215 @@ online-cloud-data-storage-concept-cloudscape-digital-online-server-global-networ
 
 
 
-    
-
-
-    <!-- About Start -->
-<!-- Pride Section Start -->
-<div class="container-xxl py-6" id="pride">
-    <div class="container">
-        <div class="row g-5">
-            <!-- Pride Text Section -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-5">
-                    <div class="years flex-shrink-0 text-center me-4">
-                        <h1 class="display-1 mb-0">1</h1>
-                        <h5 class="mb-0">Year</h5>
-                    </div>
-                    <h3 class="lh-base mb-0">of Learning Cloud Computing with AWS</h3>
-                </div>
-                <p class="mb-4">Over the past year, I have dedicated myself to mastering AWS solutions architecture, achieving top certifications that reflect my expertise and commitment to excellence.</p>
-                <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Certified by AWS Academy</p>
-                <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Proven Expertise in Cloud Solutions</p>
-                <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Committed to Continuous Learning</p>
-                <a class="btn btn-primary py-3 px-5 mt-3" href="#">Explore My Journey</a>
-            </div>
-            <!-- Pride Badge Section -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                
-                <div class="row g-3 mb-4">
-               <div class="col-sm-6">
-        <img class="img-fluid rounded" src="img/image.png" alt="AWS Cloud Architecting Certification">
-            </div>
-           <div class="col-sm-6">
-           <div class="row">
-            <div class="col-sm-6">
-                <img class="img-fluid rounded mb-3" src="img/badge.png" alt="AWS Cloud Architecting Certification">
-             </div>
-            <div class="col-sm-6">
-                <img class="img-fluid rounded mb-3" src="img/sysops badge.png" alt="AWS Sysops Certification">
-            </div>
-            <div class="col-sm-6">
-                <img class="img-fluid rounded" src="img/img.png" alt="AWS Networking">
-            </div>
-        </div>
-    </div>
-</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Pride Section End -->
-
-
-    <!-- About End -->
-
-
-    <!-- Expertise Start -->
-   <div class="container-xxl py-6 pb-5" id="skill">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5 mb-5">Skills </h1>
-                
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">AWS Core Services</h6>
-                                <h6 class="font-weight-bold">70%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-baby-blue" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Containerization (Docker & Kubernetes)</h6>
-                                <h6 class="font-weight-bold">40%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-turquoise" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Cloud Computing</h6>
-                                <h6 class="font-weight-bold">75%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-blue" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Security and Compliance</h6>
-                                <h6 class="font-weight-bold">65%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-mint" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Cost Management</h6>
-                                <h6 class="font-weight-bold">70%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-turquoise" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Networking</h6>
-                                <h6 class="font-weight-bold">80%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-blue" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">AWS Networking Concepts</h6>
-                                <h6 class="font-weight-bold">75%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-baby-blue" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Version Control (Git)</h6>
-                                <h6 class="font-weight-bold">30%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-mint" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Programming Languages (Python)</h6>
-                                <h6 class="font-weight-bold">50%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-turquoise" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">System Administration</h6>
-                                <h6 class="font-weight-bold">60%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-blue" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-   <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-        <li class="nav-item w-50">
-            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
-        </li>
-        <li class="nav-item w-50">
-            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div id="tab-1" class="tab-pane fade show p-0 active">
-            <div class="row gy-5 gx-4">
-                <div class="col-sm-12">
-                    <h5>AWS Cloud-Based Inventory Management System</h5>
-                    <hr class="text-primary my-2">
-                    <p class="text-primary mb-1">June 2024 - August 2024</p>
-                    <h6 class="mb-0">Digital Egypt Pioneers</h6>
-                    <p>This project involved designing and implementing a cloud-based inventory management system using AWS services. The system utilized AWS EC2 for compute, S3 for storage, and RDS for database management. Key features included real-time inventory tracking, automated reporting, and integration with external APIs. The project demonstrated proficiency in AWS architecture and cloud operations.</p>
-                </div>
-            </div>
-        </div>
-        <div id="tab-2" class="tab-pane fade p-0">
-            <div class="row gy-5 gx-4">
-                <div class="col-sm-12">
-                    <h5>Arab Academy for Science and Technology and Maritime Transport, Alexandria, Egypt</h5>
-                    <hr class="text-primary my-2">
-                    <p>Bachelor of Science in Computer Science</p>
-                    <p class="text-primary mb-1">Graduation Date: July 2023</p>
-                    <p class="mb-0">Grade: Very Good</p>
-                </div>
-                <div class="col-sm-6">
-                    <h5>AWS Cloud Practitioner</h5>
-                    <hr class="text-primary my-2">
-                    <p class="text-primary mb-1">June 2024 - September 2024</p>
-                    <h6 class="mb-0">Digital Egypt Pioneers</h6>
-                </div>
-                <div class="col-sm-6">
-                    <h5>AWS Cloud Architecting</h5>
-                    <hr class="text-primary my-2">
-                    <p class="text-primary mb-1">June 2024 - September 2024</p>
-                    <h6 class="mb-0">Digital Egypt Pioneers</h6>
-                </div>
-                <div class="col-sm-6">
-                    <h5>AWS Cloud Operations</h5>
-                    <hr class="text-primary my-2">
-                    <p class="text-primary mb-1">June 2024 - September 2024</p>
-                    <h6 class="mb-0">Digital Egypt Pioneers</h6>
-                </div>
-                <div class="col-sm-6">
-                    <h5>AWS Data Analytics</h5>
-                    <hr class="text-primary my-2">
-                    <p class="text-primary mb-1">June 2024 - September 2024</p>
-                    <h6 class="mb-0">Digital Egypt Pioneers</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
+    <!-- Pride Section Start -->
+    <div class="container-xxl py-6" id="#about" style="background-color: #f4f4f4; padding: 60px 0;">
         <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Services</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
-                </div>
-            </div>
-            <div class="row g-4">
+            <div class="row g-5">
+                <!-- Pride Text Section -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            
-                            <i class="fas fa-cogs  fa-2x text-dark"></i>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0" style="color: #6244C5;">1</h1>
+                            <h5 class="mb-0" style="color: #6244C5;">Year</h5>
                         </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">AWS Solutions Architecture</h4>
-                            <p>Designing, deploying, and managing cloud solutions using AWS</p>
-                            
-                        </div>
+                        <h3 class="lh-base mb-0">of Learning Cloud Computing with AWS</h3>
                     </div>
+                    <p class="mb-4">Over the past year, I have dedicated myself to mastering AWS solutions architecture, achieving top certifications that reflect my expertise and commitment to excellence.</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Certified by AWS Academy</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Proven Expertise in Cloud Solutions</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Committed to Continuous Learning</p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="#">Explore My Journey</a>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fas fa-tools fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Cloud Support</h4>
-                            <p>Providing technical assistance and troubleshooting cloud services.</p>
-                            
-                        </div>
-                    </div>
+                <!-- Pride Badge Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        
+                        <!-- Badge Section -->
+                   <div class="container-xxl py-6" id="pride" style="background-color: #f4f4f4; padding: 60px 0;">
+                 <div class="container">
+                <div class="row g-3">
+            <!-- Badge 1 -->
+            <div class="col-md-6 col-lg-4">
+                <img class="img-fluid rounded mb-3" src="img/image.png" alt="AWS Badge 4">
+              </div>
+                 <div class="col-md-6 col-lg-4">
+                <img class="img-fluid rounded mb-3" src="img/badge.png" alt="AWS Badge 1">
                 </div>
-                    <div class="row g-4">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                <div class="bg-icon flex-shrink-0 mb-3">
-                    <i class="fas fa-cloud fa-2x text-dark"></i>
-                </div>
-                <div class="ms-sm-4">
-                    <h4 class="mb-3">Cloud Engineering</h4>
-                    <p>Implementing and maintaining cloud infrastructure and services.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fas fa-server fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">AWS System Administration</h4>
-                            <p>Crafting user-friendly and aesthetically pleasing interfaces.</p>
-                            
+            <!-- Badge 2 -->
+               <div class="col-md-6 col-lg-4">
+                <img class="img-fluid rounded mb-3" src="img/img.png" alt="AWS Badge 2">
+               </div>
+            <!-- Badge 3 -->
+              <div class="col-md-6 col-lg-4">
+                <img class="img-fluid rounded mb-3" src="img/sysops badge.png" alt="AWS Badge 3">
+              </div>
+            <!-- Badge 4 -->
+              
+            <!-- Add more badges here if needed -->
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Pride Section End -->
+<!-- Skills Section -->
+<div class="container" id="#skills">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-white">Skills</h2>
+
+            <!-- Row for Skills -->
+            <div class="row mb-3">
+                <!-- AWS Services -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">AWS Services</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Containerization with Docker -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">Containerization with Docker</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row for Skills -->
+            <div class="row mb-3">
+                <!-- Networking & Security -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">Networking & Security</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Infrastructure as Code (IaC) -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">Terraform</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row for Skills -->
+            <div class="row mb-3">
+                <!-- Version Control -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">Git Version Control</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- System Monitoring & Management -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">System Monitoring & Management</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-dark-blue" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row for Skills -->
+            <div class="row mb-3">
+                <!-- CI/CD Pipelines -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">Jenkins CI/CD Pipelines</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Linux & System Administration -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-3">
+                        <h3 class="text-white" style="text-align: center;">Linux & System Administration</h3>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-blue-medium" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
-    <!-- Projects Start -->
-<div class="container-xxl py-6" id="project">
+
+
+
+
+
+
+<!-- Education Section Start -->
+<div class="container-xxl py-6" id="#education" style="color: white;">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5 mb-5">Projects</h1>
+                <h1 class="display-5 mb-5" style="color: white;">Education</h1>
+                <div class="border-start border-5 border-primary ps-4 mb-4">
+                    <h4 style="color: white;">Bachelor's Degree in Computer Science</h4>
+                    <p class="mb-2" style="color: white;">Arab Academy For Science and Technology, Alexandria - 2019-2023</p>
+                    <p style="color: white;">Specialized in Computer Science</p>
+                </div>
+
+                <!-- DEPI 6-Month Scholarship -->
+                <div class="border-start border-5 border-primary ps-4 mb-4">
+                    <h4 style="color: white;">DEPI 6-Month Scholarship</h4>
+                </div>
+
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="project-item">
-                            <h5>AWS Cloud-Based Inventory Management System</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">June 2024 - August 2024</p>
-                            <h6 class="mb-0">Digital Egypt Pioneers</h6>
-                            <p>Developed a scalable inventory management system leveraging AWS services such as EC2, S3, RDS, and Lambda. Implemented serverless architecture to optimize performance and cost, resulting in a 30% reduction in operational expenses. Integrated real-time analytics and reporting capabilities using AWS QuickSight.</p>
+                    <div class="col-md-6">
+                        <div >
+                            <p style="color: white; display: flex; align-items: center;">
+                                <span style="font-size: 1.5rem; margin-right: 0.5rem;">&#x1F4D6;</span> <!-- Book emoji as a sign -->
+                                AWS Academy Cloud Architecting
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="project-item">
-                            <h5>Automated Deployment Pipeline using AWS CodePipeline</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">March 2024 - May 2024</p>
-                            <h6 class="mb-0">Personal Project</h6>
-                            <p>Designed and implemented a CI/CD pipeline for automated deployment using AWS CodePipeline, CodeBuild, and CodeDeploy. Enhanced deployment efficiency by 40%, and ensured seamless integration with GitHub for version control and AWS CloudFormation for infrastructure as code (IaC).</p>
+                    <div class="col-md-6">
+                        <div >
+                            <p style="color: white; display: flex; align-items: center;">
+                                <span style="font-size: 1.5rem; margin-right: 0.5rem;">&#x1F4D6;</span> <!-- Book emoji as a sign -->
+                                AWS Academy Cloud Foundations Course
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="project-item">
-                            <h5>Cloud Migration Strategy for E-commerce Platform</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">January 2024 - March 2024</p>
-                            <h6 class="mb-0">Freelance Project</h6>
-                            <p>Developed a comprehensive cloud migration strategy for a mid-sized e-commerce platform. Utilized AWS Migration Hub, DMS, and Snowball for seamless data migration, reducing downtime by 50%. Improved scalability and performance by leveraging AWS Auto Scaling and Elastic Load Balancing.</p>
+                    <div class="col-md-6">
+                        <div >
+                            <p style="color: white; display: flex; align-items: center;">
+                                <span style="font-size: 1.5rem; margin-right: 0.5rem;">&#x1F4D6;</span> <!-- Book emoji as a sign -->
+                                AWS Academy Cloud Operations
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="project-item">
-                            <h5>Serverless Web Application for Data Analysis</h5>
-                            <hr class="text-primary my-2">
-                            <p class="text-primary mb-1">November 2023 - December 2023</p>
-                            <h6 class="mb-0">Capstone Project</h6>
-                            <p>Built a serverless web application to analyze large datasets using AWS Lambda, API Gateway, and DynamoDB. Implemented a RESTful API and enhanced data processing speed by 60%. Integrated AWS Cognito for secure user authentication and AWS S3 for data storage.</p>
+                    <div class="col-md-6">
+                        <div >
+                            <p style="color: white; display: flex; align-items: center;">
+                                <span style="font-size: 1.5rem; margin-right: 0.5rem;">&#x1F4D6;</span> <!-- Book emoji as a sign -->
+                                AWS Data Analytics Course
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -439,100 +321,191 @@ online-cloud-data-storage-concept-cloudscape-digital-online-server-global-networ
         </div>
     </div>
 </div>
-<!-- Projects End -->
+<!-- Education Section End -->
 
 
 
-   
 
 
-    
-
-
-  <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
+<!-- Experience Section Start -->
+<div class="container-xxl py-6" id="#experience" style="color: white;">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5 mb-5" style="color: white;">Experience</h1>
+                <div class="border-start border-5 border-primary ps-4 mb-4">
+                    <h4 style="color: white;">Intern, AWS Solution Architect & Admin</h4>
+                    <p class="mb-2" style="color: white;">DEPI - 2024</p>
+                    <p style="color: white;">Gained experience in cloud computing on AWS, working on various cloud solutions and labs.</p>
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+20-109-360-0303</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">salmakassem6@gmail.com.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                       
-                        <a class="btn btn-square btn-primary me-2" href=https://www.linkedin.com/in/salma-mohamed-kassem/""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="border-start border-5 border-primary ps-4 mb-4">
+                    <h4 style="color: white;">Video Editing Lead</h4>
+                    <p class="mb-2" style="color: white;">Hands Act Group Marketing Committee - 2021-2022</p>
+                    <p style="color: white;">Led a team of 3, improving video quality and increasing event viewership by 50%.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+</div>
+<!-- Experience Section End -->
+<!-- Projects Section Start -->
+<section id="projects" class="container-xxl py-6" style="background-color: #f0f0f0;">
+    <div class="container">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Projects</h5>
+            <h1 class="mb-0">My Cloud Computing Projects</h1>
+        </div>
+        <div class="row g-5">
+    <!-- Project 1 -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="project-item rounded overflow-hidden shadow">
+            <img class="img-fluid" src="img/Start-arc.png" alt="Project 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; max-height: 200px;">
+            <div class="p-4">
+                <h5 class="fw-bold">AWS Cloud Architecting Capstone</h5>
+                <p class="mb-3">Developed a scalable and secure architecture on AWS using EC2, S3, RDS, IAM, and CloudFront...</p>
+                <!-- Button to Open Modal -->
+                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</button>
+            </div>
+        </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="project-item rounded overflow-hidden shadow">
+            <img class="img-fluid" src="img/Start-arc.png" alt="Project 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; max-height: 200px;">
+            <div class="p-4">
+                <h5 class="fw-bold">Automated Backup Solution</h5>
+                <p class="mb-3">Created an automated backup solution using AWS Lambda, S3, CloudWatch, and SNS...</p>
+                <!-- Button to Open Modal -->
+                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</button>
+            </div>
+        </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="project-item rounded overflow-hidden shadow">
+            <img class="img-fluid" src="img/project3.png" alt="Project 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; max-height: 200px;">
+            <div class="p-4">
+                <h5 class="fw-bold">DevOps CI/CD Pipeline</h5>
+                <p class="mb-3">Designed a CI/CD pipeline using AWS CodePipeline, CodeBuild, and CodeDeploy for automated deployments...</p>
+                <!-- Button to Open Modal -->
+                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- Projects Section End -->
+
+<!-- Modal for Project 1 -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="project1ModalLabel">AWS Cloud Architecting Capstone</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Text Content -->
+                <p>In this project, I developed a comprehensive cloud architecture using AWS services such as EC2, S3, RDS, IAM, and CloudFront. The architecture was designed to be scalable, secure, and highly available, addressing the specific needs of the project.</p>
+                
+                <!-- Local Video -->
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Project 2 -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="project2ModalLabel">Automated Backup Solution</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>This project involved creating an automated backup system using AWS Lambda, S3, CloudWatch, and SNS. The solution ensures regular backups of critical data and notifications in case of backup failures.</p>
+                
+                <!-- Local Video -->
+                <video class="img-fluid" controls>
+              <source src="videos/Section 25- Identity and Access Management (IAM) - Advanced, Lecture 292- AWS IAM Identity Center_2.mp4" type="video/mp4">
+            
+          </video>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Project 3 -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="project3ModalLabel">DevOps CI/CD Pipeline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Text Content -->
+                <p>Designed a complete CI/CD pipeline using AWS CodePipeline, CodeBuild, and CodeDeploy. This pipeline automates the build, test, and deployment processes, ensuring faster and more reliable application releases.</p>
+                
+                <!-- Local Video -->
+                <video class="img-fluid" controls>
+                    <source src="path/to/your-local-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
-    
 
 
-    
+
+    <!-- Footer Start -->
+<div class="container-fluid bg-dark text-white mt-5">
+    <div class="container"id="#contact">
+        <div class="row g-5">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="text-white mb-4 text-center">Contact Me</h4>
+                <div class="d-flex flex-column align-items-center">
+                    <p class="mb-2">
+                        <i class="fas fa-cloud me-3" style="font-size: 1.5rem;"></i>
+                        salmakassem6@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-cloud me-3" style="font-size: 1.5rem;"></i>
+                        +20 109-360-0303
+                    </p>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="https://www.linkedin.com/in/salma-mohamed-kassem/" target="_blank" class="text-white me-3">
+                        <i class="fab fa-linkedin" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://github.com/Salma22C/awsprojects" target="_blank" class="text-white">
+                        <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="fas fa-angle-double-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
