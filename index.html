@@ -372,8 +372,8 @@
         <div class="project-item rounded overflow-hidden shadow">
             <img class="img-fluid" src="img/Start-arc.png" alt="Project 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; max-height: 200px;">
             <div class="p-4">
-                <h5 class="fw-bold">Automated Backup Solution</h5>
-                <p class="mb-3">Created an automated backup solution using AWS Lambda, S3, CloudWatch, and SNS...</p>
+                <h5 class="fw-bold">Automated Image Transfer Using AWS Lambda</h5>
+                <p class="mb-3">Created an automated image transfer solution using AWS Lambda, S3, IAM, and CloudWatch</p>
                 <!-- Button to Open Modal -->
                 <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</button>
             </div>
@@ -385,7 +385,7 @@
             <img class="img-fluid" src="img/project3.png" alt="Project 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; max-height: 200px;">
             <div class="p-4">
                 <h5 class="fw-bold">DevOps CI/CD Pipeline</h5>
-                <p class="mb-3">Designed a CI/CD pipeline using AWS CodePipeline, CodeBuild, and CodeDeploy for automated deployments...</p>
+                <p class="mb-3"> for storage, with IAM roles and policies to manage permissions</p>
                 <!-- Button to Open Modal -->
                 <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</button>
             </div>
@@ -421,17 +421,21 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="project2ModalLabel">Automated Backup Solution</h5>
+                <h5 class="modal-title fw-bold" id="project2ModalLabel">Automated Image Transfer Using AWS Lambda</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>This project involved creating an automated backup system using AWS Lambda, S3, CloudWatch, and SNS. The solution ensures regular backups of critical data and notifications in case of backup failures.</p>
+                <p>Created an automated image transfer solution using AWS Lambda, S3, IAM, and CloudWatch. This system transfers images from a source S3 bucket to a destination S3 bucket upon upload, ensuring seamless data management and monitoring.</p>
                 
-                <!-- Local Video -->
-                <video class="img-fluid" controls>
-              <source src="videos/Section 25- Identity and Access Management (IAM) - Advanced, Lecture 292- AWS IAM Identity Center_2.mp4" type="video/mp4">
-            
-          </video>
+                <h6>Project Details:</h6>
+                <ul>
+                    <li><strong>AWS Lambda:</strong> Handles the image transfer process.</li>
+                    <li><strong>S3 Buckets:</strong> Source bucket (`source122323`) and destination bucket.</li>
+                    <li><strong>IAM Role:</strong> Configured with policies for S3 access and CloudWatch logging.</li>
+                    <li><strong>CloudWatch:</strong> Monitors and logs Lambda function executions.</li>
+                </ul>
+                
+                
 
             </div>
         </div>
