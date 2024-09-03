@@ -1,4 +1,4 @@
-/********** Global Styles **********/
+/* Global Styles */
 :root {
     --primary: #6244C5;
     --secondary: #FFC448;
@@ -15,18 +15,15 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: var(--text-color);
-    background-color: var(--blue-deep-dark);
-}
-/* General body styling to include rays effect */
-body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), 
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
                 radial-gradient(circle at center, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2) 50%);
     background-size: cover, cover;
     background-blend-mode: overlay;
+    background-color: var(--blue-deep-dark); /* Ensure consistent background color */
 }
 
 /* To enhance visibility and prevent text blending */
@@ -312,8 +309,9 @@ header {
 /* Footer */
 .bg-secondary {
     background-color: var(--blue-deep-dark);
-    color: var(--text-color);
+    color: var(--light);
 }
+
 .bg-dark-blue {
     background-color: var(--blue-dark); /* Dark blue color */
 }
