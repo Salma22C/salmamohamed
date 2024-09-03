@@ -20,7 +20,6 @@ body {
     background-color: var(--blue-deep-dark);
 }
 
-
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
@@ -201,7 +200,7 @@ body {
 
 /* Header section styling */
 .header {
-    
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
     color: #fff;
     padding: 60px 0;
     text-align: center;
