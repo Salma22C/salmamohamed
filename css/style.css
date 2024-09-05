@@ -279,15 +279,15 @@ header {
 }
 
 .bg-mint {
-    background-color: var(--blue-mint);
+    background-color: #d3d3d3; /* Light Gray */
 }
 
 .bg-warm {
-    background-color: var(--blue-medium);
+    background-color: #a9a9a9; /* Dark Gray */
 }
 
 .bg-vanilla {
-    background-color: var(--blue-light);
+    background-color: #c0c0c0; /* Silver */
 }
 
 /* Education and Experience Sections */
