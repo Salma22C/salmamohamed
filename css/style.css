@@ -265,7 +265,7 @@ header {
 
 /* Skill Progress Bars */
 .progress-bar {
-    background-color: var(--blue-dark); /* Dark blue color */
+    background-color: #808080; /* Gray color */
 }
 
 .bg-mint {
