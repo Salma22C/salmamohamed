@@ -15,7 +15,7 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     background-color: var(--blue-deep-dark);
 }
@@ -45,6 +45,7 @@ body {
 
 /* Button Styles */
 .btn {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     transition: 0.5s;
 }
@@ -100,6 +101,15 @@ body {
 }
 
 /* Header Styles */
+/* Header Content */
+.header-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Other Elements */
+#home h1, #home h2, .navbar .navbar-nav .nav-link, .typing-effect, .header h3, .header h1, .header h2, .header .cta a {
+    font-family: 'Montserrat', sans-serif;
+}
 #home {
     background: linear-gradient(135deg, #007bff, #6610f2);
     color: var(--white);
