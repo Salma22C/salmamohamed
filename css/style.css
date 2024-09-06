@@ -294,6 +294,19 @@ header {
 .border-primary {
     border-color: var(--blue-dark);
 }
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 /* Footer */
 .bg-secondary {
