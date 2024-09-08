@@ -47,7 +47,24 @@
     .animated-header {
         animation: fadeIn 1s ease-out;
     }
+       
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    
+    a:hover {
+        background: #357ABD; /* Darker shade for hover */
+    }
 </style>
+
 
 </head>
 
@@ -101,13 +118,17 @@
             <p style="font-size: 1.5rem; font-weight: lighter; color: #ccc;">Delivering Scalable, Secure, and Cost-Effective Cloud Solutions</p>
             
             <div style="margin-top: 25px;">
-                <a href="SalmaMohamed.pdf" style="background: #4a90e2; color: #fff; border: none; padding: 10px 20px; font-weight: bold; text-decoration: none; border-radius: 5px;">Download CV</a>
+                <a href="SalmaMohamed.pdf" style="background: #4a90e2; color: #fff; border: none; padding: 10px 20px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s ease;">Download CV</a>
             </div>
             
         </div>
     </div>
 </div>
 <!-- Header End -->
+
+<!-- Responsive Design and Hover Effect -->
+
+
 
 
 
@@ -350,22 +371,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- Text Content -->
-                <p>Developed a scalable and secure architecture on AWS using EC2, S3, RDS, IAM, and CloudFront. The solution ensures high availability and robust security for PHP applications by leveraging AWS services for effective management and protection of resources.</p>
-                
-                <h6>Architecture Overview:</h6>
-                <ul>
-                    <li><strong>EC2:</strong> Scalable compute resources for hosting PHP applications.</li>
-                    <li><strong>S3:</strong> Secure storage for static assets and backups.</li>
-                    <li><strong>RDS:</strong> Managed database service for reliable and scalable database operations.</li>
-                    <li><strong>IAM:</strong> Granular access control and security management for AWS resources.</li>
-                    <li><strong>CloudFront:</strong> Content Delivery Network (CDN) to distribute content globally with low latency.</li>
-                </ul>
+                <p>Detailed information about the project goes here. You can describe the technologies used, the challenges faced, and the solutions implemented.</p>
+                <img src="img/arch2.jpg" alt="Project 1" style="width: 100%; height: auto;">
             </div>
-        </div>
-    </div>
-</div>
-
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
@@ -379,14 +390,16 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Created an automated image transfer solution using AWS Lambda, S3, IAM, and CloudWatch. This system transfers images from a source S3 bucket to a destination S3 bucket upon upload, ensuring seamless data management and monitoring.</p>
-                <div class="button-grid">
-               <button class="button">AWS Lambda</button>
-                <button class="button">S3</button>
-                <button class="button">IAM</button>
-                 <button class="button">CloudWatch</button>
-                
-                </div>
+                <p>Detailed information about the project goes here. You can describe the technologies used, the challenges faced, and the solutions implemented.</p>
+                <img src="img/arch.png" alt="Project 2" style="width: 100%; height: auto;">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
                 
                 
                 
