@@ -1,0 +1,395 @@
+/********** Global Styles **********/
+:root {
+    --primary: #6244C5;
+    --secondary: #FFC448;
+    --light: #FAFAFB;
+    --dark: #12141D;
+    --white: #FFFFFF;
+    --blue-dark: #003366; /* Dark Blue */
+    --blue-deep-dark: #0b3d91; /* Deeper Dark Blue */
+    --blue-medium: #1976d2;  /* Medium Blue */
+    --blue-light: #64b5f6;  /* Light Blue */
+    --blue-mint: #e3f2fd;   /* Very Light Blue */
+    --text-color: #000000;  /* Black Text for contrast */
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--blue-deep-dark);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/* Spinner */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Button Styles */
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary), 10%);
+    transform: scale(1.05);
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn-square { width: 38px; height: 38px; }
+.btn-sm-square { width: 32px; height: 32px; }
+.btn-lg-square { width: 48px; height: 48px; }
+
+/* Navbar Styles */
+.navbar.fixed-top {
+    display: none;
+    transition: 0.5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 20px 15px;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* Header Styles */
+/* Header Content */
+.header-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Other Elements */
+#home h1, #home h2, .navbar .navbar-nav .nav-link, .typing-effect, .header h3, .header h1, .header h2, .header .cta a {
+    font-family: 'Montserrat', sans-serif;
+}
+#home {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: var(--white);
+    padding: 80px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #0056b3;
+    position: relative;
+    overflow: hidden;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#home h2 {
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content .btn {
+    margin-top: 1rem;
+}
+
+#home .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#home .social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+#home .social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+#home .social-links a:hover {
+    color: var(--secondary);
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for the cursor blink effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Styling for the typing effect */
+.typing-effect {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for typing effect */
+    overflow: hidden; /* Hide text that overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: .15em solid #fff; /* Create the cursor effect */
+    animation: typing 4s steps(30, end), blink .75s step-end infinite; /* Apply typing and cursor blink animation */
+    width: 0; /* Start with zero width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    color: #ccc; /* Text color */
+}
+
+/* Header section styling */
+.header {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h3 {
+    color: #4a90e2; /* Color for the "I'm" text */
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+
+.header .cta a {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Define different shades of blue and dark colors for consistent theming */
+:root {
+    --blue-dark: #003366; /* Dark Blue */
+    --blue-deep-dark: #0b3d91; /* Deeper Dark Blue */
+    --blue-medium: #1976d2;  /* Medium Blue */
+    --blue-light: #64b5f6;  /* Light Blue */
+    --blue-mint: #e3f2fd;   /* Very Light Blue */
+    --text-color: #000000;  /* Black Text for contrast */
+}
+
+/* General Body Style */
+body {
+    color: var(--text-color);
+    background-color: var(--blue-deep-dark);
+}
+
+/* Header Style */
+header {
+    background: linear-gradient(to right, var(--blue-dark), var(--blue-deep-dark));
+    color: var(--text-color);
+}
+
+/* Skill Progress Bars */
+.progress-bar {
+    background-color: #d3d3d3; /* Gray color */
+}
+
+.bg-mint {
+    background-color: #d3d3d3; /* Light Gray */
+}
+
+.bg-warm {
+    background-color: #a9a9a9; /* Dark Gray */
+}
+
+.bg-vanilla {
+    background-color: #c0c0c0; /* Silver */
+}
+
+/* Education and Experience Sections */
+.border-primary {
+    border-color: var(--blue-dark);
+}
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Creates a circle */
+}
+
+/* Footer */
+.bg-secondary {
+    background-color: var(--blue-deep-dark);
+    color: var(--text-color);
+}
+.bg-dark-blue {
+    background-color: var(--blue-dark); /* Dark blue color */
+}
+
+/* Contact Icons */
+a.btn-primary, .btn-primary {
+    background-color: var(--blue-medium);
+    border-color: var(--blue-medium);
+    color: var(--text-color);
+}
+
+/* Back to Top Button */
+.btn-lg-square {
+    background-color: var(--blue-dark);
+    color: var(--text-color);
+}
+
+/* Play Button Styles */
+.btn-play {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    padding: 18px 20px 20px 28px;
+    background: var(--primary);
+}
+
+.btn-play:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-style: solid;
+    border-width: 0 0 16px 26px;
+    border-color: transparent transparent #fff transparent;
+    border-radius: 50%;
+}
+
+/* Keyframes for pulse border animation */
+@keyframes pulse-border {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
